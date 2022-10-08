@@ -28,3 +28,12 @@ const dedupe = function(arrInput) {
   }
   return arrOutput;
 }
+
+
+//using the filter method
+const arrFilter = function(arrInput) {
+  let filteredArr = arrInput.filter((element, index) => {
+      return arrInput.indexOf(element) === index;
+  })
+  return filteredArr;
+}
