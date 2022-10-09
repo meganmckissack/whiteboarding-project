@@ -21,7 +21,7 @@ const urlToString = function(stringInput) {
   //let str = stringInput;
   let urlOutput = [];
   if(typeof stringInput !== 'string') {
-    return;
+    return "please input a valid string";
   } else {
     for(i = 0; i < stringInput.length; i++) {
       if(stringInput[i] === ' ') {

@@ -15,6 +15,9 @@
 //return resulting array as a joined string
 
 const compress = function(stringInput) {
+  if(typeof stringInput !== 'string') {
+    return "please input a valid string";
+  } else {
   let compressed = [];
   let repeats = {};
   for(i = 0; i < stringInput.length; i++) {
@@ -28,6 +31,7 @@ const compress = function(stringInput) {
     }
   }
   return compressed.join('');
+  }
 }
 
 

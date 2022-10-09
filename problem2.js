@@ -18,7 +18,7 @@
 const dedupe = function(arrInput) {
   let arrOutput = [];
   if(Array.isArray(arrInput) === false || arrInput === null){
-    return;
+    return "input is not an array";
   } else {
     arrInput.forEach(element => {
       if(arrOutput.indexOf(element) !== arrInput.indexOf(element)) {
